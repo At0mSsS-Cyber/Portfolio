@@ -11,13 +11,16 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { siteConfig } from "@/config/site.config";
 
+// Limits are kept inside the server's contactSchema (lib/validations/contact.schema.ts):
+// first + last name fit its 100-character name, and the message leaves room for the
+// "[Subject: …]" prefix within its 2000-character message.
 const contact2Schema = z.object({
   firstname: z
     .string()
     .min(2, "First name must be at least 2 characters")
     .max(50, "First name cannot exceed 50 characters")
     .trim(),
-  lastname: z.string().max(50, "Last name cannot exceed 50 characters").optional(),
+  lastname: z.string().max(49, "Last name cannot exceed 49 characters").optional(),
   email: z
     .string()
     .min(1, "Email is required")
@@ -27,8 +30,8 @@ const contact2Schema = z.object({
   subject: z.string().max(150, "Subject cannot exceed 150 characters").optional(),
   message: z
     .string()
-    .min(5, "Message must be at least 5 characters long")
-    .max(2000, "Message cannot exceed 2000 characters")
+    .min(10, "Message must be at least 10 characters long")
+    .max(1800, "Message cannot exceed 1800 characters")
     .trim(),
   _hp_website: z.string().optional(),
 });
@@ -96,7 +99,9 @@ export const Contact2 = ({
       const result = await response.json();
 
       if (!response.ok || !result.success) {
-        throw new Error(result.error || 'Failed to submit contact message.');
+        // Prefer the server's field-level message over its generic one
+        const fieldErrors: string[] = result.details ? Object.values<string[]>(result.details).flat() : [];
+        throw new Error(fieldErrors[0] || result.error || 'Failed to submit contact message.');
       }
 
       setSubmitStatus({
