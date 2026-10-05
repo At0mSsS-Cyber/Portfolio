@@ -9,8 +9,9 @@ import './spider-scroll.css';
    SpiderWebScrollbar
    ================================================================
    A fixed sidebar on the right edge of the viewport that acts as a
-   custom scrollbar. A spider on its web anchor at top, an orb web at
-   bottom, with a procedurally-generated organic silk strand between them.
+   custom scrollbar. A figure climbing the strand at top, another hanging
+   from it at bottom, with a procedurally-generated organic spider silk
+   strand between them.
 
    Everything — artwork AND web strands — automatically detects the
    background behind it at runtime and adapts colors for contrast.
@@ -39,8 +40,8 @@ const STRAND_DARK_ON_LIGHT = 'rgba(0, 0, 0, 0.55)';
 const STRAND_DARK_ON_LIGHT_THIN = 'rgba(0, 0, 0, 0.2)';
 const STRAND_LIGHT_ON_DARK = 'rgba(255, 255, 255, 0.55)';
 const STRAND_LIGHT_ON_DARK_THIN = 'rgba(255, 255, 255, 0.2)';
-const GLOW_ON_LIGHT = 'rgba(124, 58, 237, 0.6)';
-const GLOW_ON_DARK = 'rgba(167, 139, 250, 0.7)';
+const GLOW_ON_LIGHT = 'rgba(180, 0, 0, 0.6)';
+const GLOW_ON_DARK = 'rgba(255, 80, 80, 0.6)';
 
 // ---- Helpers ----
 function lerp(a: number, b: number, t: number): number {
@@ -527,10 +528,10 @@ export function SpiderWebScrollbar() {
       className="spider-scroll-sidebar"
       aria-hidden="true"
     >
-      {/* Spider on its web anchor at top */}
+      {/* Figure climbing the strand at top */}
       <div ref={topArtRef} className="web-top-art">
         <Image
-          src="/images/web-spider.svg"
+          src="/images/scroll-figure-top.webp"
           alt=""
           width={IMAGE_SIZE}
           height={IMAGE_SIZE + 10}
@@ -547,10 +548,10 @@ export function SpiderWebScrollbar() {
         style={{ pointerEvents: 'auto', cursor: 'pointer' }}
       />
 
-      {/* Orb web at bottom */}
+      {/* Figure hanging from the strand at bottom */}
       <div ref={bottomArtRef} className="web-bottom-art">
         <Image
-          src="/images/web-orb.svg"
+          src="/images/scroll-figure-bottom.webp"
           alt=""
           width={IMAGE_SIZE}
           height={IMAGE_SIZE + 10}

@@ -19,14 +19,14 @@
   /* Theme-aware strand color — resolved via currentColor */
   --web-strand-color: rgba(0, 0, 0, 0.55);
   --web-strand-color-light: rgba(0, 0, 0, 0.2);
-  --spider-glow: rgba(124, 58, 237, 0.6);
+  --spider-glow: rgba(180, 0, 0, 0.6);
 }
 
 /* Dark theme overrides */
 :is(.dark) .spider-scroll-sidebar {
   --web-strand-color: rgba(255, 255, 255, 0.5);
   --web-strand-color-light: rgba(255, 255, 255, 0.15);
-  --spider-glow: rgba(167, 139, 250, 0.7);
+  --spider-glow: rgba(255, 80, 80, 0.6);
 }
 
 /* ---- Top & Bottom Artwork ---- */
@@ -56,7 +56,7 @@
   filter: invert(1) drop-shadow(0 0 12px var(--spider-glow));
 }
 
-/* Spider idle bob */
+/* Climbing figure idle bob */
 .spider-scroll-sidebar .web-top-art {
   animation: web-top-bob 3s ease-in-out infinite;
 }
@@ -71,7 +71,7 @@
   }
 }
 
-/* Orb web hanging sway */
+/* Hanging figure sway */
 .spider-scroll-sidebar .web-bottom-art {
   animation: web-bottom-sway 4s ease-in-out infinite;
 }
