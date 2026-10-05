@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c3aed" />
+      <stop offset="1" stop-color="#a78bfa" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)" />
+  <!-- AT monogram, matching components/ui/Logo.tsx -->
+  <g transform="translate(10 20) scale(0.22 0.24)" fill="#ffffff">
+    <path d="M 0 100 L 38 0 L 62 0 L 100 100 L 76 100 L 50 30 L 24 100 Z" />
+    <path d="M 37.4 64 L 62.6 64 L 67.8 78 L 32.2 78 Z" />
+    <path d="M 104 0 L 200 0 L 200 22 L 166 22 L 166 100 L 142 100 L 142 22 L 112 22 Z" />
+  </g>
+</svg>

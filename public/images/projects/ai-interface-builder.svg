@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img" aria-label="Generative AI Interface Builder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1b1726"/>
+      <stop offset="1" stop-color="#0c0b11"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="740" cy="70" r="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="72" y1="0" x2="828" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <rect width="900" height="600" fill="url(#grid)"/>
+  <rect width="900" height="600" fill="url(#glow)"/>
+  <text x="72" y="84" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" font-weight="600" letter-spacing="4" text-anchor="start" fill="#ffffff" fill-opacity="0.55">GENERATIVE AI · LANGGRAPH AGENTS</text>
+  <rect x="72" y="130" width="300" height="72" rx="22" fill="url(#accent)"/><rect x="98" y="156" width="210" height="8" rx="4" fill="#ffffff" fill-opacity="0.95"/><rect x="98" y="176" width="140" height="8" rx="4" fill="#ffffff" fill-opacity="0.7"/><rect x="72" y="222" width="250" height="72" rx="22" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.15"/><rect x="98" y="248" width="170" height="8" rx="4" fill="#ffffff" fill-opacity="0.55"/><rect x="98" y="268" width="110" height="8" rx="4" fill="#ffffff" fill-opacity="0.35"/><rect x="72" y="314" width="112" height="52" rx="26" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.15"/><circle cx="106" cy="340" r="6" fill="#ffffff" fill-opacity="0.75"/><circle cx="128" cy="340" r="6" fill="#ffffff" fill-opacity="0.5"/><circle cx="150" cy="340" r="6" fill="#ffffff" fill-opacity="0.3"/><path d="M400 248 L462 248" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M448 234 L464 248 L448 262" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M648 164 L676 164" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M752 198 L752 268" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M676 302 L648 302" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="496" y="130" width="152" height="68" rx="18" fill="#15121e" stroke="#ffffff" stroke-opacity="0.22"/><text x="572" y="170" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" font-weight="600" letter-spacing="1" text-anchor="middle" fill="#ffffff" fill-opacity="0.9">LISTEN</text><rect x="676" y="130" width="152" height="68" rx="18" fill="#15121e" stroke="#ffffff" stroke-opacity="0.22"/><text x="752" y="170" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" font-weight="600" letter-spacing="1" text-anchor="middle" fill="#ffffff" fill-opacity="0.9">PARSE</text><rect x="676" y="268" width="152" height="68" rx="18" fill="#15121e" stroke="#ffffff" stroke-opacity="0.22"/><text x="752" y="308" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" font-weight="600" letter-spacing="1" text-anchor="middle" fill="#ffffff" fill-opacity="0.9">MAP</text><rect x="496" y="268" width="152" height="68" rx="18" fill="#15121e" stroke="#ffffff" stroke-opacity="0.22"/><text x="572" y="308" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" font-weight="600" letter-spacing="1" text-anchor="middle" fill="#ffffff" fill-opacity="0.9">DELIVER</text><circle cx="520" cy="412" r="24" fill="#10b981"/><path d="M509 412 L517 420 L532 404" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="558" y="418" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" font-weight="600" letter-spacing="2" text-anchor="start" fill="#ffffff" fill-opacity="0.8">FLOW VALIDATED</text>
+  <text x="72" y="536" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="-1" text-anchor="start" fill="#ffffff" fill-opacity="1">Generative AI Interface Builder</text>
+  <rect x="72" y="556" width="72" height="5" rx="2.5" fill="url(#accent)"/>
+</svg>

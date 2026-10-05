@@ -1,0 +1,105 @@
+/* ============================================================
+   Spider Web Scroll Sidebar — Scoped Styles & Animations
+   ============================================================ */
+
+/* ---- Sidebar Container ---- */
+.spider-scroll-sidebar {
+  position: fixed;
+  top: 0;
+  right: -20px;
+  width: 110px;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 50;
+  pointer-events: none; /* Allow click-through by default */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0;
+  /* Theme-aware strand color — resolved via currentColor */
+  --web-strand-color: rgba(0, 0, 0, 0.55);
+  --web-strand-color-light: rgba(0, 0, 0, 0.2);
+  --spider-glow: rgba(124, 58, 237, 0.6);
+}
+
+/* Dark theme overrides */
+:is(.dark) .spider-scroll-sidebar {
+  --web-strand-color: rgba(255, 255, 255, 0.5);
+  --web-strand-color-light: rgba(255, 255, 255, 0.15);
+  --spider-glow: rgba(167, 139, 250, 0.7);
+}
+
+/* ---- Top & Bottom Artwork ---- */
+.spider-scroll-sidebar .web-top-art,
+.spider-scroll-sidebar .web-bottom-art {
+  position: relative;
+  flex-shrink: 0;
+  pointer-events: auto;
+  z-index: 2;
+  filter: drop-shadow(0 0 6px var(--spider-glow));
+  transition: filter 0.1s ease;
+}
+
+/* Auto-invert when sitting on a dark background (set by JS) */
+.spider-scroll-sidebar .web-top-art[data-on-dark="true"],
+.spider-scroll-sidebar .web-bottom-art[data-on-dark="true"] {
+  filter: invert(1) drop-shadow(0 0 6px var(--spider-glow));
+}
+
+.spider-scroll-sidebar .web-top-art:hover,
+.spider-scroll-sidebar .web-bottom-art:hover {
+  filter: drop-shadow(0 0 12px var(--spider-glow));
+}
+
+.spider-scroll-sidebar .web-top-art[data-on-dark="true"]:hover,
+.spider-scroll-sidebar .web-bottom-art[data-on-dark="true"]:hover {
+  filter: invert(1) drop-shadow(0 0 12px var(--spider-glow));
+}
+
+/* Spider idle bob */
+.spider-scroll-sidebar .web-top-art {
+  animation: web-top-bob 3s ease-in-out infinite;
+}
+
+@keyframes web-top-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+/* Orb web hanging sway */
+.spider-scroll-sidebar .web-bottom-art {
+  animation: web-bottom-sway 4s ease-in-out infinite;
+}
+
+@keyframes web-bottom-sway {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+
+/* ---- Canvas Web ---- */
+.spider-scroll-sidebar .web-canvas {
+  flex: 1;
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+
+/* ---- Responsive: hide on small screens ---- */
+@media (max-width: 767px) {
+  .spider-scroll-sidebar {
+    display: none;
+  }
+}
