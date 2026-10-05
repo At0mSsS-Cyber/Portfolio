@@ -11,11 +11,11 @@ import { SEO_DEFAULTS } from '@/constants/seo-defaults';
 export const metadata: Metadata = {
   title: 'Works & Case Studies',
   description:
-    'Healthcare integration platforms, Generative AI agents and multi-tenant SaaS products built with React, TypeScript, Python and Azure.',
+    'Generative AI agents, AI-driven products and multi-tenant SaaS platforms built with React, TypeScript, Python, Java Spring Boot and Azure.',
   openGraph: {
     title: 'Works & Case Studies',
     description:
-      'Healthcare integration platforms, Generative AI agents and multi-tenant SaaS products built with React, TypeScript, Python and Azure.',
+      'Generative AI agents, AI-driven products and multi-tenant SaaS platforms built with React, TypeScript, Python, Java Spring Boot and Azure.',
     url: `${siteConfig.url}/works`,
     images: [`${siteConfig.url}/api/og?title=${encodeURIComponent('Works & Case Studies')}&type=Portfolio`],
   },
@@ -34,7 +34,7 @@ export default async function WorksPage() {
       <PageHero
         title="My"
         highlight="Works"
-        subtitle="Platforms and products I've built across healthcare interoperability, Generative AI and proptech."
+        subtitle="Generative AI agents, AI-driven products and multi-tenant platforms I've built across healthcare and proptech."
       />
 
       {/* Interactive Filterable Projects Grid */}

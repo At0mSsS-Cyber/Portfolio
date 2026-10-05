@@ -10,9 +10,9 @@ export interface SeoDefaults {
 }
 
 export const SEO_DEFAULTS: SeoDefaults = {
-  title: 'Akhil Tom | Full-Stack Software Engineer',
+  title: 'Akhil Tom | Full-Stack AI Engineer',
   description:
-    'Full-stack software engineer with 4 years of experience building multi-tenant SaaS platforms for healthcare interoperability (HL7 v2, FHIR, X12 EDI) and Generative AI with React, TypeScript, Python and Azure.',
+    'Full-stack AI engineer building Generative AI agents (LLMs, LangGraph, RAG) and multi-tenant SaaS platforms with React, Python, Node.js, Java Spring Boot and Azure. Healthcare interoperability specialist (HL7 v2, FHIR, X12 EDI).',
   ogImage: '/api/og',
   twitterHandle: '',
   siteName: 'Akhil Tom',

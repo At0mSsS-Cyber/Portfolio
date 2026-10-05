@@ -53,7 +53,7 @@ export function HeroPortrait({ className = '' }: HeroPortraitProps) {
         }}
         transition={{ type: 'spring', damping: 25, stiffness: 100 }}
         className={`relative z-10 w-full h-full flex justify-center lg:justify-end ${
-          portraitSrc ? 'items-end' : 'items-center'
+          portraitSrc ? 'items-end' : 'items-start sm:items-center'
         }`}
       >
         {portraitSrc ? (

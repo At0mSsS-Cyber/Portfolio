@@ -1,6 +1,6 @@
 # Akhil Tom — Portfolio
 
-Personal portfolio of Akhil Tom, full-stack software engineer (React, TypeScript, Python, Azure; healthcare interoperability and Generative AI). Built with Next.js 15, React 19, and Tailwind CSS v4, with rich animations and an optional backend for dynamic content management.
+Personal portfolio of Akhil Tom, full-stack AI engineer (Generative AI agents with LLMs and LangGraph; React, TypeScript, Python, Node.js, Java Spring Boot and Azure; healthcare interoperability). Built with Next.js 15, React 19, and Tailwind CSS v4, with rich animations and an optional backend for dynamic content management.
 
 ## Editing Content
 

@@ -4,12 +4,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Check, Sparkles } from 'lucide-react';
 
-const PIPELINE_STEPS = ['HL7 v2', 'Transform', 'FHIR R4'];
+const AGENT_STEPS = ['Chat', 'LangGraph', 'Deploy'];
+
+const STACK = ['React', 'FastAPI', 'Node.js', 'Spring Boot'];
 
 const STATS = [
   { value: '4 yrs', label: 'Experience' },
-  { value: '90%', label: 'Faster interface builds' },
-  { value: '100+', label: 'React components' },
+  { value: '90%', label: 'Faster builds with AI' },
+  { value: '30%', label: 'Projected lift, AI pricing' },
 ];
 
 function floatTransition(duration: number, delay = 0) {
@@ -18,16 +20,16 @@ function floatTransition(duration: number, delay = 0) {
 
 /**
  * Hero illustration shown when no portrait photo is configured (siteConfig.images.heroPortrait).
- * Three floating product cards sketch the work: an integration pipeline, an AI agent
- * conversation and headline numbers.
+ * Three floating product cards sketch the work: an AI agent pipeline with the stack
+ * behind it, an agent conversation and headline numbers.
  */
 export function HeroShowcase() {
   return (
     <div
-      className="relative w-[460px] h-[430px] shrink-0 scale-[0.66] min-[400px]:scale-75 sm:scale-90 xl:scale-110"
+      className="relative w-[460px] h-[430px] shrink-0 origin-top sm:origin-center scale-[0.66] min-[400px]:scale-75 sm:scale-90 xl:scale-110"
       aria-hidden="true"
     >
-      {/* Card 1: Integration pipeline */}
+      {/* Card 1: AI agent pipeline */}
       <motion.div
         animate={{ y: [0, -8, 0] }}
         transition={floatTransition(6)}
@@ -35,7 +37,7 @@ export function HeroShowcase() {
       >
         <div className="flex items-center justify-between">
           <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-            Integration Pipeline
+            AI Agent Pipeline
           </span>
           <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-600 dark:text-emerald-400">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
@@ -44,7 +46,7 @@ export function HeroShowcase() {
         </div>
 
         <div className="mt-4 flex items-center gap-1.5">
-          {PIPELINE_STEPS.map((step, index) => (
+          {AGENT_STEPS.map((step, index) => (
             <React.Fragment key={step}>
               {index > 0 && <ArrowRight className="h-3.5 w-3.5 shrink-0 text-[#8B5CF6]" />}
               <span className="rounded-lg border border-border bg-muted/70 px-2.5 py-1.5 font-mono text-[11px] font-semibold text-foreground whitespace-nowrap">
@@ -54,9 +56,15 @@ export function HeroShowcase() {
           ))}
         </div>
 
-        <div className="mt-4 flex flex-col gap-1.5">
-          <span className="h-1.5 w-full rounded-full bg-muted" />
-          <span className="h-1.5 w-2/3 rounded-full bg-muted" />
+        <div className="mt-4 flex flex-wrap gap-1.5">
+          {STACK.map((tech) => (
+            <span
+              key={tech}
+              className="rounded-full bg-[#8B5CF6]/10 px-2 py-0.5 text-[10px] font-semibold text-[#7C3AED] dark:text-[#a78bfa] whitespace-nowrap"
+            >
+              {tech}
+            </span>
+          ))}
         </div>
       </motion.div>
 

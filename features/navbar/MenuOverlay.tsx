@@ -153,7 +153,7 @@ export function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               </span>
             </h1>
             <p className="left-panel-line text-sm md:text-base lg:text-lg text-black/70 max-w-lg text-center leading-relaxed font-normal normal-case tracking-normal">
-              Platforms and products I&apos;ve built across healthcare interoperability, Generative AI and proptech.
+              Generative AI agents, AI-driven products and multi-tenant platforms I&apos;ve built across healthcare and proptech.
             </p>
           </>
         );
@@ -195,7 +195,7 @@ export function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                   alt=""
                 />
               </span>
-              SOFTWARE ENGINEER
+              FULL-STACK AI ENGINEER
             </div>
 
             <div className="left-panel-line flex items-center justify-center gap-2 md:gap-3 flex-wrap">
@@ -213,16 +213,16 @@ export function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
             </div>
 
             <div className="left-panel-line flex items-center justify-center gap-2 md:gap-3 flex-wrap">
-              HEALTHCARE
+              LLM AGENTS
               <span className="relative w-16 md:w-20 lg:w-24 h-8 md:h-10 lg:h-12 bg-gray-200 rounded-full overflow-hidden shadow-sm border border-black/10 flex-shrink-0 inline-flex">
                 <Image
-                  src="/images/pill-pulse.svg"
+                  src="/images/pill-agent.svg"
                   fill
                   className="object-cover"
                   alt=""
                 />
               </span>
-              &amp; AI PLATFORMS
+              &amp; SAAS PLATFORMS
             </div>
           </>
         );

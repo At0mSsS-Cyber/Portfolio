@@ -32,9 +32,9 @@ export const siteConfig: SiteConfig = {
   name: "Akhil Tom Portfolio",
   author: "Akhil",
   fullName: "Akhil Tom",
-  role: "Full-Stack Software Engineer",
+  role: "Full-Stack AI Engineer",
   description:
-    "Portfolio of Akhil Tom, a full-stack software engineer building healthcare integration platforms and Generative AI products with React, TypeScript, Python and Azure.",
+    "Portfolio of Akhil Tom, a full-stack AI engineer building Generative AI agents and multi-tenant SaaS platforms with React, TypeScript, Python, Node.js, Java Spring Boot and Azure, with deep healthcare interoperability experience.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   ogImage: "/api/og",
   contact: {

@@ -127,23 +127,23 @@ export function AboutMe() {
             variants={fadeRight}
           >
             <p className="text-base sm:text-lg leading-relaxed text-neutral-300">
-              I&apos;m a full-stack software engineer from {siteConfig.contact.location}, with{' '}
-              <span className="text-white font-semibold">4 years</span> of experience building and shipping scalable, multi-tenant SaaS platforms for healthcare and proptech.
+              I&apos;m a full-stack AI engineer from {siteConfig.contact.location}, with{' '}
+              <span className="text-white font-semibold">4 years</span> of experience building and shipping Generative AI features and scalable, multi-tenant SaaS platforms.
             </p>
 
             <p className="text-base sm:text-lg leading-relaxed text-neutral-300">
-              At Keleno Labs I&apos;m a core engineer on{' '}
-              <span className="text-[#a78bfa] font-semibold">MedSyncAI</span>, a no-code healthcare integration platform on Azure. I work across HL7 v2, FHIR and X12 EDI pipelines, and build Generative AI features with LLMs and LangGraph agents that turn chat conversations into validated, deployable integration flows.
+              At Keleno Labs I build{' '}
+              <span className="text-[#a78bfa] font-semibold">Generative AI agent pipelines</span>{' '}
+              with LLMs and LangGraph, including one that turns chat conversations into validated, deployable integration flows, alongside OCR + LLM document processing. Pairing the agents with deterministic generators cut LLM cost per interface to zero and build time by 90%.
             </p>
 
             <p className="text-base sm:text-lg leading-relaxed text-neutral-300">
-              My day-to-day stack is React, TypeScript and Python (FastAPI) on Microsoft Azure. I own features end to end in cross-functional Agile teams, from Figma designs and REST APIs to Kubernetes, Infrastructure as Code and CI/CD.
+              I work across the whole stack: React and TypeScript on the front end; Python (FastAPI), Node.js and Java Spring Boot services behind it; PostgreSQL, Kafka and Redis for data; and Microsoft Azure with Kubernetes, Infrastructure as Code and CI/CD to run it. I own features end to end in cross-functional Agile teams.
             </p>
 
             <p className="text-base sm:text-lg leading-relaxed text-neutral-300">
-              Along the way I&apos;ve contributed{' '}
-              <span className="text-[#a78bfa] font-semibold">100+ accessible React components</span>{' '}
-              to a company design system and built an AI-driven pricing platform covering 1,000 properties. I hold a Master of Computer Applications from Bangalore University.
+              Much of that work is in healthcare. I&apos;m a core engineer on{' '}
+              <span className="text-[#a78bfa] font-semibold">MedSyncAI</span>, a no-code healthcare integration platform, working with HL7 v2, FHIR R4 and X12 EDI. I&apos;ve also built an AI-driven pricing platform covering 1,000 properties, and I hold a Master of Computer Applications from Bangalore University.
             </p>
 
             {/* Stats Pills */}
@@ -153,8 +153,9 @@ export function AboutMe() {
             >
               {[
                 { label: 'Experience', value: '4 Years' },
-                { label: 'Focus', value: 'Healthcare & Gen AI' },
-                { label: 'Stack', value: 'React · Python · Azure' },
+                { label: 'Focus', value: 'Gen AI & Agents' },
+                { label: 'Stack', value: 'React · Python · Node.js · Java' },
+                { label: 'Domain', value: 'Healthcare Interop' },
               ].map((stat) => (
                 <div
                   key={stat.label}

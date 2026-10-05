@@ -29,6 +29,7 @@ import {
   SiLanggraph,
   SiRedux,
   SiRedis,
+  SiSpringboot,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { VscAzure } from "react-icons/vsc";
@@ -71,6 +72,7 @@ const ICON_MAP: Record<string, IconType> = {
   langgraph: SiLanggraph,
   redux: SiRedux,
   redis: SiRedis,
+  "spring boot": SiSpringboot,
 };
 
 const DB_ICON_MAP: Record<string, IconType> = {

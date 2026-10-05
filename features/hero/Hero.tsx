@@ -87,7 +87,7 @@ export function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative flex h-[100dvh] min-h-[700px] w-full flex-col justify-center overflow-hidden px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 pt-16 lg:pt-0 pb-0"
+      className="relative flex min-h-[100dvh] lg:h-[100dvh] lg:min-h-[700px] w-full flex-col justify-center overflow-hidden px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 pt-16 lg:pt-0 pb-0"
     >
       {/* Background ambient lighting */}
       <div
@@ -117,10 +117,10 @@ export function Hero() {
           {/* Subtitle & Tagline directly underneath matching Image 1 */}
           <div className="hero-subtitle mt-4 sm:mt-5 max-w-xl mx-auto lg:mx-0">
             <p className="text-base sm:text-2xl md:text-[1.75rem] font-normal text-foreground/90 tracking-tight leading-snug">
-              Full-Stack Engineering for Healthcare & Generative AI
+              Full-Stack AI Engineer Building LLM Agents & Scalable SaaS
             </p>
             <p className="mt-1.5 text-xs sm:text-base text-muted-foreground leading-relaxed">
-              Full-stack software engineer with 4 years of experience building multi-tenant SaaS platforms with React, TypeScript, Python & Azure.
+              4 years shipping Generative AI features and multi-tenant platforms with React, TypeScript, Python, Node.js, Java Spring Boot & Azure, with deep healthcare interoperability expertise.
             </p>
           </div>
 
